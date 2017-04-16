@@ -1,0 +1,136 @@
+{
+    "version":"1.0",
+    "date":"19/05/2016",
+    "historique":{
+        "mission":"CClin_Nouvelles_fonc",
+        "status":"active",
+        "objectif":[
+            {
+                "id":"0",
+                "label":"Accueil",
+                "status":"done",
+                "tache":[
+                    {
+                        "id":"0",
+                        "name":"Sophie",
+                        "label":"Discuter avec Sophie",
+                        "scene":"Accueil_HCL",
+                        "status":"done"
+                    },
+                    {
+                        "id":"1",
+                        "name":"téléphone",
+                        "label":"Répondez au Tel(Essai)",
+                        "scene":"Accueil_HCL",
+                        "status":"done"
+                    },
+                    {
+                        "id":"2",
+                        "name":"ZoneTriggerToVetstiaire",
+                        "label":"Aller au vestiaire",
+                        "scene":"Accueil_HCL",
+                        "status":"done"
+                    }
+                ]
+            },
+            {
+                "id":"1",
+                "label":"Aller se mettre en tenue",
+                "status":"active",
+                "tache":[
+                    {
+                        "id":"0",
+                        "name":"Essentiels_Tenue",
+                        "label":"Récupérer 'Essentiel-Tenue'",
+                        "scene":"Scene Vestiaire HCL",
+                        "status":"done"
+                    },
+                    {
+                        "id":"1",
+                        "name":"se_mettre_en_tenue",
+                        "label":"mettez vous en tenue de combat ",
+                        "scene":"Scene Vestiaire HCL",
+                        "status":"active"
+                    },
+                    {
+                        "id":"2",
+                        "name":"Etage",
+                        "label":"Aller dans le service",
+                        "scene":"Scene Vestiaire HCL",
+                        "status":"new"
+                    }
+                ]
+            },
+            {
+                "id":"2",
+                "label":"prise de poste / relève",
+                "status":"new",
+                "tache":[
+                    {
+                        "id":"0",
+                        "name":"infermiere_assise",
+                        "label":"Discutter avec l'infermière de nuit",
+                        "scene":"etage bis version 3",
+                        "status":"new"
+                    },
+                    {
+                        "id":"1",
+                        "name":"vomissement",
+                        "label":"Madame vertigo a vomi - netoyez le sol",
+                        "scene":"etage bis version 3",
+                        "status":"new"
+                    },
+                    {
+                        "id":"2",
+                        "name":"lave_bassin",
+                        "label":"Branchez le lave-bassin",
+                        "scene":"etage bis version 3",
+                        "status":"new"
+                    }
+                ]
+            },
+            {
+                "id":"3",
+                "label":"Accueil du premier patient",
+                "status":"new",
+                "tache":[
+                    {
+                        "id":"0",
+                        "name":"salle_de_soin",
+                        "label":"Aller dans la salle de soin",
+                        "scene":"etage bis version 3",
+                        "status":"new"
+                    },
+                    {
+                        "id":"1",
+                        "name":"OrdinateurMobil_fiches",
+                        "label":"lire le dossier médical",
+                        "scene":"etage bis version 3",
+                        "status":"new"
+                    },
+                    {
+                        "id":"2",
+                        "name":"recupmedoc",
+                        "label":"Récuperer les médicaments de Mme Vertigo",
+                        "scene":"etage bis version 3",
+                        "status":"new"
+                    },
+                    {
+                        "id":"3",
+                        "name":"Malade_allonge_PNJ",
+                        "label":"Parler avec M Vertigo",
+                        "scene":"etage bis version 3",
+                        "status":"new"
+                    },
+                    {
+                        "id":"4",
+                        "name":"Malade_allonge_exchange",
+                        "label":"Donner les médicaments à M Vertigo",
+                        "scene":"etage bis version 3",
+                        "status":"new"
+                    }
+                ]
+            }
+        ]
+    }
+}

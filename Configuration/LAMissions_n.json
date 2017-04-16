@@ -1,0 +1,234 @@
+{
+	"version": "1.2",
+	"missions": [{
+		"missionName": "CCLIN",
+		"firstScene": "",
+		"version": "1.0",
+		"date": "13\/04\/2015",
+		"objectifs": [{
+			"_label": "Accueil",
+			"_commentaire": "",
+			"_messageFin": "",
+			"_score": "50",
+			"taches": [
+			
+			{    "_optionelle":"true",
+				"_type": "OBJET",
+				"_titre": "Récuperer le pistolet",
+				"_name": "pisto1et",
+				"_loadScene": "",
+				"_posX": "-23.37",
+				"_posY": "1.097",
+				"_posZ": "32.41",
+				"_scene": "Accueil_HCL",
+				"_openURL": "",
+				"_prefab": "prefab\/prefabObjet\/pistolet",
+				"_permanent": "false"
+			},
+			
+			
+			
+			
+			{
+				"_type": "PNJ",
+				"_titre": "Discuter avec Sophie",
+				"_scene": "Accueil_HCL",
+				"_name": "Sophie",
+				"_conversation": "discussion_bonjour_sophie",
+				"_loadScene": "",
+				"_posX": "-25.46896",
+				"_posY": "0.247",
+				"_posZ": "31.02604",
+				"_prefab": "prefab\/prefabCaracter\/Sophie",
+				"_permanent": "false"
+			},
+			{
+				"_type": "OBJET",
+				"_titre": "Répondez au Tel(Essai)",
+				"_name": "téléphone",
+				"_loadScene": "",
+				"_posX": "-20.17",
+				"_posY": "1.79",
+				"_posZ": "27.41",
+				"_scene": "Accueil_HCL",
+				"_openURL": "",
+				"_prefab": "prefab\/prefabObjet\/phone",
+				"_permanent": "false"
+			},
+
+			{
+				"_type": "ZONE",
+				"_titre": "Aller au vestiaire",
+				"_name": "ZoneTriggerToVetstiaire",
+				"_posX": "-27.945",
+				"_posY": "0",
+				"_posZ": "37.60332",
+				"_conversation": "",
+				"_loadScene": "Scene Vestiaire HCL",
+				"_scene": "Accueil_HCL",
+				"_prefab": "prefab\/prefabZone\/ZoneTrigger",
+				"_permanent": "false"
+			}]
+		}, {
+			"_label": "Aller se mettre en tenue",
+			"_messageFin": "",
+			"_score": "50",
+			"taches": [ 
+			{
+				"_type": "OBJET",
+				"_titre": "R\u00e9cup\u00e9rer 'Essentiel-Tenue'",
+				"_name": "Essentiels_Tenue",
+				"_loadScene": "",
+				"_posX": "71.06",
+				"_posY": "1.36",
+				"_posZ": "72.21",
+				"_scene": "Scene Vestiaire HCL",
+				"_conversation": "",
+				"_prefab": "prefab\/prefabObjet\/cube_vide_placard",
+				"_openURL": "LesEssentiels-Tenue.pdf",
+				"_permanent": "false"
+			}, {
+				"_type": "OPERATION",
+				"_titre": "mettez vous en tenue de combat ",
+				"_name": "se_mettre_en_tenue",
+				"_posX": "-16.6111",
+				"_posY": "-4.029273",
+				"_posZ": "32.99343",
+				"_conversation": "",
+				"_scene": "Scene Vestiaire HCL",
+				"_prefab": "prefab\/prefabOperation\/prendreMedicament",
+				"_duree": "120"
+			}, {
+				"_type": "ZONE",
+				"_titre": "Aller dans le service",
+				"_name": "Etage",
+				"_posX": "80.81",
+				"_posY": "0",
+				"_posZ": "74.028",
+				"_conversation": "",
+				"_loadScene": "etage bis version 3",
+				"_scene": "Scene Vestiaire HCL",
+				"_prefab": "prefab\/prefabZone\/ZoneTrigger",
+				"_permanent": "true"
+			}]
+		}, {
+			"_label": "prise de poste \/ rel\u00e8ve",
+			"_messageFin": "Le service est pret \u00e0 acceuillir le premier patient",
+			"_score": "50",
+			"taches": [
+			{
+				"_type": "OBJET",
+				"_titre": "Madame vertigo a vomi - netoyez le sol",
+				"_name": "vomissement",
+				"_loadScene": "",
+				"_posX": "-32.565",
+				"_posY": "0.829",
+				"_posZ": "9.696",
+				"_scene": "etage bis version 3",
+				"_conversation": "",
+				"_prefab": "prefab\/prefabObjet\/Vomit",
+				"_permanent": "false"
+			},
+			
+			
+			
+			{   "_optionelle":"true",
+				"_type": "PNJ",
+				"_titre": "Discutter avec l'infermière de nuit",
+				"_scene": "etage bis version 3",
+				"_name": "infermiere_assise",
+				"_conversation": "conversation_etage_infermiere_nuit",
+				"_loadScene": "",
+				"_posX": "-14.861",
+				"_posY": "1.608",
+				"_posZ": "36.431",
+				"_prefab": "prefab\/prefabCaracter\/infermiere_assise",
+				"_permanent": "false"
+			},
+			
+			 
+			{
+				"_type": "OBJET",
+				"_titre": "Branchez le lave-bassin",
+				"_name": "lave_bassin",
+				"_loadScene": "",
+				"_posX": "-6.623",
+				"_posY": "0.807",
+				"_posZ": "23.693",
+				"_scene": "etage bis version 3",
+				"_prefab": "prefab\/prefabObjet\/UnplugedCable",
+				"_permanent": "true"
+			}
+
+			]
+		}, {
+			"_label": "Accueil du premier patient",
+			"_messageFin": "Et si on faisait un point sur vos connaissances th\u00e9oriques",
+			"_score": "50",
+			"taches": [ {
+				"_type": "ZONE",
+				"_titre": "Aller dans la salle de soin",
+				"_scene": "etage bis version 3",
+				"_name": "salle_de_soin",
+				"_conversation": "",
+				"_loadScene": "",
+				"_posX": "-21.34",
+				"_posY": "0.83",
+				"_posZ": "41.66",
+				"_prefab": "prefab\/prefabZone\/ZoneTrigger",
+				"_permanent": "false"
+			}, {
+				"_type": "PNJ",
+				"_titre": "lire le dossier médical",
+				"_scene": "etage bis version 3",
+				"_name": "OrdinateurMobil_fiches",
+				"_conversation": "",
+				"_loadScene": "",
+				"_posX": "-12.92327",
+				"_posY": "0.75",
+				"_posZ": "35.37249",
+				"_prefab": "prefab\/prefabCaracter\/ordinateurs_fiches_patients\/OrdinateurMobil_fiches",
+				"_permanent": "true"
+			}, {
+				"_type": "OPERATION",
+				"_titre": "R\u00e9cuperer les m\u00e9dicaments de Mme Vertigo",
+				"_name": "recupmedoc",
+				"_posX": "-16.6111",
+				"_posY": "-4.029273e-07",
+				"_posZ": "32.99343",
+				"_conversation": "",
+				"_scene": "etage bis version 3",
+				"_prefab": "prefab\/prefabOperation\/prendreMedicament",
+				"_duree": "50"
+			}, {
+				"_type": "PNJ",
+				"_titre": "Parler avec M Vertigo",
+				"_scene": "etage bis version 3",
+				"_name": "Malade_allonge_PNJ",
+				"_conversation": "discussion_vertigo1",
+				"_loadScene": "",
+				"_posX": "-33.74589",
+				"_posY": "1.323",
+				"_posZ": "9.586989",
+				"_prefab": "prefab\/prefabCaracter\/Malade_allonge_PNJ",
+				"_permanent": "false"
+			}, 
+			{
+				"_type": "OBJET",
+				"_titre": "Donner les m\u00e9dicaments \u00e0 M Vertigo",
+				"_name": "Malade_allonge_exchange",
+				"_loadScene": "",
+				"_posX": "-33.74589",
+				"_posY": "1.323",
+				"_posZ": "9.586989",
+				"_scene": "etage bis version 3",
+				"_openURL": "",
+				"_prefab": "prefab\/prefabObjet\/Malade_allonge_exchange",
+				"_permanent": "true"
+			}
+			
+			]
+			}
+		]
+	}]
+}

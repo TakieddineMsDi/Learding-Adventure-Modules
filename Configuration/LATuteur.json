@@ -1,0 +1,80 @@
+{  
+   "version":"1.0",
+   "date":"03/05/2016",
+   "tuteurs":[  
+      {  
+         "scene":"Accueil_HCL",
+         "id":"Demo_Initial_Accueil_HCL",
+         "etapes":[  
+            {  
+               "type":"Texte",
+               "titre":"Menu du jeu",
+               "contenu":"Ici vous avez un Menu composé respectivement d'un bouton pour quitter le jeu, votre tenue, votre sac, contenu de votre guéridon et un bouton de paramètres du jeu",
+               "taille":{"longueur":250,"largeur":350},
+               "ancrage":{  
+                  "posx":-320,
+                  "posy":280,
+                  "preset":3,
+                  "angle":3
+               }
+            },
+            {  
+               "type":"Texte",
+               "titre":"Indicateurs",
+               "contenu":"Ici les indicateurs de propreté des mains, vos bonnes pratiques et le niveau de germes dans votre environnement.",
+               "taille":{"longueur":180,"largeur":360},
+               "ancrage":{  
+                  "posx":0,
+                  "posy":-180,
+                  "preset":8,
+                  "angle":8
+               }
+            },
+            {  
+               "type":"Texte",
+               "titre":"Taches à faire",
+               "contenu":"Ici la liste des taches demandées. La tâche que vous êtes entrain de faire est en orange, une fois terminée elle devient verte, les tâches à venir sont précédées d'une boule grise.",
+               "taille":{"longueur":205,"largeur":360},
+               "ancrage":{  
+                  "posx":506.89,
+                  "posy":0,
+                  "preset":4,
+                  "angle":4
+               }
+            },
+            {  
+               "type":"Texte",
+               "titre":"Mini Map LA",
+               "contenu":"mini map du scene en cours",
+               "taille":{"longueur":150,"largeur":329.1},
+               "ancrage":{  
+                  "posx":324,
+                  "posy":221.5,
+                  "preset":1,
+                  "angle":1
+               }
+            }
+         ]
+      },
+	  {
+	  "scene1":"Accueil_HCL",
+	  "scene":"etage bis version 3",
+         "id":"Demo_A_etage",
+         "etapes":[  
+            {  
+               "type":"Texte",
+               "titre":"Donner les médicaments au patient",
+               "contenu":"Cliquez sur le bouton sac du menu pour ouvrir votre sac, cliquez sur l'item des médicaments pour transformer votre curseur en capsule ainsi clicquez sur le patient",
+               "taille":{"longueur":210,"largeur":350},
+               "ancrage":{  
+                  "posx":-600,
+                  "posy":300,
+                  "preset":3,
+                  "angle":5
+               }
+            }
+            
+			]
+	  }
+   ]
+}
